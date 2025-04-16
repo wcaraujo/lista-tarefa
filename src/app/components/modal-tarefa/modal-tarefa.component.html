@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>Cadastrar nova tarefa</h2>
+<br>
+<mat-dialog-content style="margin-top: 10px;">
+    <form [formGroup]="formGroup" class="formulario">
+        <mat-form-field appearance="outline">
+            <mat-label>Descrição</mat-label>
+            <input matInput type="text" formControlName="descricao">
+        </mat-form-field> 
+        <mat-slide-toggle formControlName="conluido" labelPosition="before">Concluída</mat-slide-toggle>
+    </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-flat-button mat-dialog-close>Salvar</button>
+</mat-dialog-actions>
