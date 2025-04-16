@@ -1,0 +1,15 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <span>Minhas Tarefas</span>
+        <span class="example-spacer"></span>
+        <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon class="example-icon" aria-hidden="false">more_vert</mat-icon>
+        </button>
+            <mat-menu #menu="matMenu">
+            <button mat-menu-item>{{ nomeUsuario }}</button>
+            <button mat-menu-item>
+                <mat-icon class="example-icon" aria-hidden="false">logout</mat-icon>
+            </button>
+        </mat-menu>        
+    </mat-toolbar-row>
+</mat-toolbar>
