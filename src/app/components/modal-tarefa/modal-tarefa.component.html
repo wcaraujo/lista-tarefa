@@ -4,13 +4,13 @@
     <form [formGroup]="formGroup" class="formulario">
         <mat-form-field appearance="outline">
             <mat-label>Descrição</mat-label>
-            <input matInput type="text" formControlName="descricao">
+            <input matInput type="text" formControlName="description">
         </mat-form-field> 
-        <mat-slide-toggle formControlName="conluido" labelPosition="before">Concluída</mat-slide-toggle>
+        <mat-slide-toggle formControlName="completed" labelPosition="before">Concluída</mat-slide-toggle>
     </form>
 </mat-dialog-content>
 
 <mat-dialog-actions>
     <button mat-button mat-dialog-close>Cancelar</button>
-    <button mat-flat-button mat-dialog-close>Salvar</button>
+    <button mat-flat-button (click)="salvar()">Salvar</button>
 </mat-dialog-actions>

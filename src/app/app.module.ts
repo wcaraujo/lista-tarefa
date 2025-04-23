@@ -8,6 +8,7 @@ import { MaterialModule } from './shared/modules/material/material.module';
 import { MenuPageComponent } from './shared/components/menu-page/menu-page.component';
 import { ModalTarefaComponent } from './components/modal-tarefa/modal-tarefa.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
