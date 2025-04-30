@@ -44,4 +44,5 @@ export class ModalTarefaComponent implements OnInit {
       }
     })
   }
+  
 }
